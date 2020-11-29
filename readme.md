@@ -1,6 +1,6 @@
 ## Stockforecastingmodelbasedon_XGboost(B question) 
 ### [https://github.com/Fickle519/stockforecastingmodelbasedon_XGboost.git]
-[Author:Xuanhe Er, Xiaohan Huang, Yanbo Cheng. ]from ** Chengdu University of Information Technology**
+[Author:Xuanhe Er, Xiaohan Huang, Yanbo Cheng. ]from  Chengdu University of Information Technology(CUIT)
 
 ## Background
 
@@ -46,9 +46,20 @@ data is in the project(./data/)
     "data_path" : "./data/600519.SH.csv",
     "diagram_title" : "600519.SH diagram",
     "test_size" : 0.2,
-    "N" : 3,
+    "prev_factor" : 3,
     "SEED" : 300,
-    "threshold_value" : 1
+    "threshold_value" : 1,
+    "XGBRegressor": {
+        "n_estimators":100,
+        "max_depth":7,
+        "eval_metric":"rmse",
+        "learning_rate":0.1,
+        "min_child_weight":1,
+        "subsample":1,
+        "colsample_bytree":1,
+        "colsample_bylevel":1,
+        "gamma":0
+        }
 }
 
 ```

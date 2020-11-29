@@ -53,12 +53,12 @@ def get_peak_value(num_list):
 
 def get_model():
     return XGBRegressor(seed=config_obj["SEED"],
-                     n_estimators=config_obj["XGBRegressor"]["n_estimators"],
-                     max_depth=config_obj["XGBRegressor"]["max_depth"],
+                     n_estimators=config_obj["XGBRegressor"]["N_estimators"],
+                     max_depth=config_obj["XGBRegressor"]["maxium_depth"],
                      eval_metric=config_obj["XGBRegressor"]["eval_metric"],
-                     learning_rate=config_obj["XGBRegressor"]["learning_rate"],
-                     min_child_weight=config_obj["XGBRegressor"]["min_child_weight"],
-                     subsample=config_obj["XGBRegressor"]["subsample"],
-                     colsample_bytree=config_obj["XGBRegressor"]["colsample_bytree"],
-                     colsample_bylevel=config_obj["XGBRegressor"]["colsample_bylevel"],
+                     learning_rate=config_obj["XGBRegressor"]["learn_rate"],
+                     min_child_weight=config_obj["XGBRegressor"]["min_children_Theta"],
+                     subsample=config_obj["XGBRegressor"]["sub_sample"],
+                     colsample_bytree=config_obj["XGBRegressor"]["sample_byTree"],
+                     colsample_bylevel=config_obj["XGBRegressor"]["sample_byLevel"],
                      gamma=config_obj["XGBRegressor"]["gamma"])

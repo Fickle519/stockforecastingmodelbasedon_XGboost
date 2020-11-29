@@ -1,5 +1,6 @@
 ## Stockforecastingmodelbasedon_XGboost(B question) 
-### [https://github.com/Fickle519/stockforecastingmodelbasedon_XGboost.git][Author:Xuanhe Er, Xiaohan Huang, Yanbo Cheng. ** Chengdu University of Information Technology**]
+### [https://github.com/Fickle519/stockforecastingmodelbasedon_XGboost.git]
+[Author:Xuanhe Er, Xiaohan Huang, Yanbo Cheng. ]from ** Chengdu University of Information Technology**
 
 ## Background
 

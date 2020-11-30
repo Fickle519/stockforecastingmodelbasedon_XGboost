@@ -67,7 +67,7 @@ stk_path:origin .csv data file location
 title: the diagrams' title
 you can see other parameters' meaning in the paper
 **threshold's value depends on the diagrams' Y ticks and you can chooose the suitable value depend on your dataset you are using**
-(here we recommend you the value of N should equal 3,otherwise you should change some of the structure of code)
+(here we recommend you the value of prev_factor should equal 3,otherwise you should change some of the structure of code)
 
 2. check the data is already existed in the project path(if it is not in the project ,just create a new dir in project and put the .csv data file in it.)
 

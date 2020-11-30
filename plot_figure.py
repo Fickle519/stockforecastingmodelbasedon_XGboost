@@ -27,7 +27,7 @@ def plot_ax3(extre):
     ax3.set_title(config_obj["diagram_title"])
     
     
-def plot_chart(gs,test,X_train_scaled,y_train_scaled,X_sample_scaled):
+def plot_chart(gs,dF,test,X_train_scaled,y_train_scaled,X_sample_scaled):
     gs.fit(X_train_scaled, y_train_scaled)
     
     pre_scaled_Y_value = gs.predict(X_sample_scaled)
@@ -40,7 +40,7 @@ def plot_chart(gs,test,X_train_scaled,y_train_scaled,X_sample_scaled):
     import model.StockPriceForecast_Model_XG as XG_model
     ndarray = test['close'].values
     indexs = XG_model.get_peak_value(ndarray)
-    #print(indexs)
+    print(indexs)
     extre = test.iloc[indexs]
     
     plot_ax2(test)
@@ -50,4 +50,5 @@ def plot_chart(gs,test,X_train_scaled,y_train_scaled,X_sample_scaled):
     plt.savefig('./XGBoost_result_pre/pre_result_{}_3.png'.format(config_obj["diagram_title"]))
     
     plt.show()
+    return ndarray
     

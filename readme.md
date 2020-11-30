@@ -43,12 +43,12 @@ data is in the project(./data/)
 
 ```json
 {
-    "data_path" : "./data/002281.SZ.csv",
-    "diagram_title" : "002281.SZ diagram",
+    "data_path" : "./data/600519.SH.csv",
+    "diagram_title" : "600519.SH diagram",
     "test_size" : 0.2,
     "prev_factor" : 3,
     "SEED" : 300,
-    "threshold_value" : 1,
+    "threshold_value" : 20,
     "XGBRegressor": {
         "N_estimators":100,
         "maxium_depth":7,

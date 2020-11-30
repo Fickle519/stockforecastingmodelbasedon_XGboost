@@ -11,6 +11,7 @@ import model.load_data_module as LM
 import model.StockPriceForecast_Model_XG as XG_model
 import plot_figure 
 import util.util as tool
+import appraisal.apprisal_result as ar
 
 start = time.time()
 config_obj = LM.load_config()
@@ -76,7 +77,14 @@ model = XG_model.get_model()
 
 GS = GSCV(estimator= model,param_grid=parameters,cv=5,refit= True,scoring='neg_mean_squared_error')
 
-plot_figure.plot_chart(GS,test,X_train_scaled,y_train_scaled,X_sample_scaled)
+ndarray = plot_figure.plot_chart(GS,df,test,X_train_scaled,y_train_scaled,X_sample_scaled)
 #calculate time cost
 end = time.time()
 print('total time cost {:.2f} sec.'.format(end-start))
+
+test_track = list(zip(range(len(test)),ndarray))
+pre_y_track = list(zip(range(len(test)),test['predict_y_Value'].values))
+distans = ar.frechet_distance(test_track, pre_y_track)
+print('appraisal:\nfrechet_distance =',distans)
+
+

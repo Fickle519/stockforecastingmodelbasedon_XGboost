@@ -1,6 +1,6 @@
-## Stockforecastingmodelbasedon_XGboost(B question) 
+## Intelligent Time Series Stock Price Prediction Based on Extreme Gradient Boosting
 ### [https://github.com/Fickle519/stockforecastingmodelbasedon_XGboost.git]
-[Author:Xuanhe Er, Xiaohan Huang, Yanbo Cheng. ]from  Chengdu University of Information Technology(CUIT)
+[Author:Xuanhe Er, Yunqi Sun]
 
 ## Background
 
